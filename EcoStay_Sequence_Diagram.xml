@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36" version="29.6.1">
+  <diagram name="EcoStay Sequence Diagram" id="EcoStaySequenceDiagram">
+    <mxGraphModel dx="2977" dy="2500" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="2800" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Title -->
+        <mxCell id="title" value="EcoStay Application - Sequence Diagram" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=18;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="10" width="1300" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Actor -->
+        <mxCell id="actor_user" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="User" vertex="1" parent="1">
+          <mxGeometry x="80" y="80" width="30" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- Objects/Participants -->
+        <mxCell id="obj_main" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;fontSize=11;fontStyle=1;" value="MainActivity" vertex="1" parent="1">
+          <mxGeometry x="160" y="80" width="100" height="40" as="geometry" />
+        </mxCell>
+
+        <mxCell id="obj_register" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;fontSize=11;fontStyle=1;" value="RegisterActivity" vertex="1" parent="1">
+          <mxGeometry x="330" y="80" width="100" height="40" as="geometry" />
+        </mxCell>
+
+        <mxCell id="obj_home" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;fontSize=11;fontStyle=1;" value="HomeActivity" vertex="1" parent="1">
+          <mxGeometry x="500" y="80" width="100" height="40" as="geometry" />
+        </mxCell>
+
+        <mxCell id="obj_explore" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;fontSize=11;fontStyle=1;" value="ExploreActivity" vertex="1" parent="1">
+          <mxGeometry x="670" y="80" width="100" height="40" as="geometry" />
+        </mxCell>
+
+        <mxCell id="obj_booking" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;fontSize=11;fontStyle=1;" value="BookingActivity" vertex="1" parent="1">
+          <mxGeometry x="840" y="80" width="100" height="40" as="geometry" />
+        </mxCell>
+
+        <mxCell id="obj_activities" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;fontSize=11;fontStyle=1;" value="ActivitiesActivity" vertex="1" parent="1">
+          <mxGeometry x="1010" y="80" width="100" height="40" as="geometry" />
+        </mxCell>
+
+        <mxCell id="obj_profile" style="rounded=1;whiteSpace:wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;fontSize=11;fontStyle=1;" value="ProfileActivity" vertex="1" parent="1">
+          <mxGeometry x="1180" y="80" width="100" height="40" as="geometry" />
+        </mxCell>
+
+        <mxCell id="obj_database" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=11;fontStyle=1;" value="DatabaseHelper" vertex="1" parent="1">
+          <mxGeometry x="1300" y="80" width="100" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Lifelines -->
+        <mxCell id="lifeline_user" style="line;strokeWidth=2;html=1;" value="" edge="1" parent="1" source="actor_user" target="actor_user">
+          <mxGeometry x="95" y="140" width="1" height="2600" as="geometry" />
+        </mxCell>
+
+        <mxCell id="lifeline_main" style="line;strokeWidth=1;dashed=1;html=1;" value="" edge="1" parent="1" source="obj_main" target="obj_main">
+          <mxGeometry x="210" y="120" width="1" height="2600" as="geometry" />
+        </mxCell>
+
+        <mxCell id="lifeline_register" style="line;strokeWidth=1;dashed=1;html=1;" value="" edge="1" parent="1" source="obj_register" target="obj_register">
+          <mxGeometry x="380" y="120" width="1" height="2600" as="geometry" />
+        </mxCell>
+
+        <mxCell id="lifeline_home" style="line;strokeWidth=1;dashed=1;html=1;" value="" edge="1" parent="1" source="obj_home" target="obj_home">
+          <mxGeometry x="550" y="120" width="1" height="2600" as="geometry" />
+        </mxCell>
+
+        <mxCell id="lifeline_explore" style="line;strokeWidth=1;dashed=1;html=1;" value="" edge="1" parent="1" source="obj_explore" target="obj_explore">
+          <mxGeometry x="720" y="120" width="1" height="2600" as="geometry" />
+        </mxCell>
+
+        <mxCell id="lifeline_booking" style="line;strokeWidth=1;dashed=1;html=1;" value="" edge="1" parent="1" source="obj_booking" target="obj_booking">
+          <mxGeometry x="890" y="120" width="1" height="2600" as="geometry" />
+        </mxCell>
+
+        <mxCell id="lifeline_activities" style="line;strokeWidth=1;dashed=1;html=1;" value="" edge="1" parent="1" source="obj_activities" target="obj_activities">
+          <mxGeometry x="1060" y="120" width="1" height="2600" as="geometry" />
+        </mxCell>
+
+        <mxCell id="lifeline_profile" style="line;strokeWidth=1;dashed=1;html=1;" value="" edge="1" parent="1" source="obj_profile" target="obj_profile">
+          <mxGeometry x="1230" y="120" width="1" height="2600" as="geometry" />
+        </mxCell>
+
+        <mxCell id="lifeline_database" style="line;strokeWidth=1;dashed=1;html=1;" value="" edge="1" parent="1" source="obj_database" target="obj_database">
+          <mxGeometry x="1350" y="120" width="1" height="2600" as="geometry" />
+        </mxCell>
+
+        <!-- SEQUENCE 1: REGISTRATION -->
+        <mxCell id="label_seq1" value="SEQ 1: USER REGISTRATION" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;backgroundColor=#FFF2CC;" vertex="1" parent="1">
+          <mxGeometry x="50" y="160" width="300" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="msg_r1" value="1: Click Register" style="html=1;verticalAlign=bottom;endArrow=open;dashed=0;endFill=0;fontSize=10;" edge="1" parent="1" source="actor_user" target="obj_main">
+          <mxGeometry relative="1" width="120" height="20" as="geometry">
+            <mxPoint x="95" y="190" as="sourcePoint" />
+            <mxPoint x="210" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="msg_r2" value="2: startActivity(RegisterActivity)" style="html=1;verticalAlign=bottom;endArrow=open;dashed=0;endFill=0;fontSize=10;" edge="1" parent="1" source="obj_main" target="obj_register">
+          <mxGeometry relative="1" width="150" height="20" as="geometry">
+            <mxPoint x="210" y="210" as="sourcePoint" />
+            <mxPoint x="380" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="msg_r3" value="3: Enter Full Name, Email &amp; Password" style="html=1;verticalAlign=bottom;endArrow=open;dashed=0;endFill=0;fontSize=10;" edge="1" parent="1" source="actor_user" target="obj_register">
+          <mxGeometry relative="1" width="150" height="20" as="geometry">
+            <mxPoint x="95" y="240" as="sourcePoint" />
+            <mxPoint x="380" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="msg_r4" value="4: registerUser()" style="html=1;verticalAlign=bottom;endArrow=open;dashed=0;endFill=0;fontSize=10;" edge="1" parent="1" source="obj_register" target="obj_database">
+          <mxGeometry relative="1" width="150" height="20" as="geometry">
+            <mxPoint x="380" y="270" as="sourcePoint" />
+            <mxPoint x="1350" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="msg_r5" value="5: Hash password &amp; INSERT into TABLE_USER" style="html=1;verticalAlign=bottom;endArrow=open;dashed=0;endFill=0;fontSize=10;strokeColor=#FF0000;" edge="1" parent="1" source="obj_database" target="obj_database">
+          <mxGeometry relative="1" width="200" height="20" as="geometry">
+            <mxPoint x="1350" y="290" as="sourcePoint" />
+            <mxPoint x="1400" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="msg_r6" value="6: return success/failure" style="html=1;verticalAlign=bottom;endArrow=open;dashed=0;endFill=0;fontSize=10;" edge="1" parent="1" source="obj_database" target="obj_register">
+          <mxGeometry relative="1" width="150" height="20" as="geometry">
+            <mxPoint x="1350" y="310" as="sourcePoint" />
+            <mxPoint x="380" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="msg_r7" value="7: Toast notification" style="html=1;verticalAlign=bottom;endArrow=open;dashed=0;endFill=0;fontSize=10;" edge="1" parent="1" source="obj_register" target="actor_user">
+          <mxGeometry relative="1" width="150" height="20" as="geometry">
+            <mxPoint x="380" y="330" as="sourcePoint" />
+            <mxPoint x="95" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- SEQUENCE 2: LOGIN -->
+        <mxCell id="label_seq2" value="SEQ 2: USER LOGIN" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;backgroundColor=#FFF2CC;" vertex="1" parent="1">
+          <mxGeometry x="50" y="370" width="300" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="msg_l1" value="8: Enter Email &amp; Password" style="html=1;verticalAlign=bottom;endArrow=open;dashed=0;endFill=0;fontSize=10;" edge="1" parent="1" source="actor_user" target="obj_main">
+          <mxGeometry relative="1" width="150" height="20" as="geometry">
+            <mxPoint x="95" y="400" as="sourcePoint" />
+            <mxPoint x="210" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="msg_l2" value="9: Click Login" style="html=1;verticalAlign=bottom;endArrow=open;dashed=0;endFill=0;fontSize=10;" edge="1" parent="1" source="actor_user" target="obj_main">
+          <mxGeometry relative="1" width="150" height="20" as="geometry">
+            <mxPoint x="95" y="430" as="sourcePoint" />
+            <mxPoint x="210" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="msg_l3" value="10: loginUser(email, password)" style="html=1;verticalAlign=bottom;endArrow=open;dashed=0;endFill=0;fontSize=10;" edge="1" parent="1" source="obj_main" target="obj_database">
+          <mxGeometry relative="1" width="150" height="20" as="geometry">
+            <mxPoint x="210" y="450" as="sourcePoint" />
+            <mxPoint x="1350" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="msg_l4" value="11: Query users &amp; verify password hash" style="html=1;verticalAlign=bottom;endArrow=open;dashed=0;endFill=0;fontSize=10;strokeColor=#FF0000;" edge="1" parent="1" source="obj_database" target="obj_database">
+          <mxGeometry relative="1" width="200" height="20" as="geometry">
+            <mxPoint x="1350" y="470" as="sourcePoint" />
+            <mxPoint x="1400" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="msg_l5" value="12: return fullName" style="html=1;verticalAlign=bottom;endArrow=open;dashed=0;endFill=0;fontSize=10;" edge="1" parent="1" source="obj_database" target="obj_main">
+          <mxGeometry relative="1" width="150" height="20" as="geometry">
+            <mxPoint x="1350" y="490" as="sourcePoint" />
+            <mxPoint x="210" y="490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="msg_l6" value="13: Store in SharedPreferences" style="html=1;verticalAlign=bottom;endArrow=open;dashed=0;endFill=0;fontSize=10;strokeColor=#0000FF;" edge="1" parent="1" source="obj_main" target="obj_main">
+          <mxGeometry relative="1" width="150" height="20" as="geometry">
+            <mxPoint x="210" y="510" as="sourcePoint" />
+            <mxPoint x="280" y="510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="msg_l7" value="14: startActivity(HomeActivity)" style="html=1;verticalAlign=bottom;endArrow=open;dashed=0;endFill=0;fontSize=10;" edge="1" parent="1" source="obj_main" target="obj_home">
+          <mxGeometry relative="1" width="150" height="20" as="geometry">
+            <mxPoint x="210" y="530" as="sourcePoint" />
+            <mxPoint x="550" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- SEQUENCE 3: EXPLORE ROOMS -->
+        <mxCell id="label_seq3" value="SEQ 3: BROWSE &amp; SEARCH ROOMS" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;backgroundColor=#FFF2CC;" vertex="1" parent="1">
+          <mxGeometry x="50" y="570" width="400" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="msg_e1" value="15: Click Explore Tab" style="html=1;verticalAlign=bottom;endArrow=open;dashed=0;endFill=0;fontSize=10;" edge="1" parent="1" source="actor_user" target="obj_home">
+          <mxGeometry relative="1" width="150" height="20" as="geometry">
+            <mxPoint x="95" y="600" as="sourcePoint" />
+            <mxPoint x="550" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="msg_e2" value="16: startActivity(ExploreActivity)" style="html=1;verticalAlign=bottom;endArrow=open;dashed=0;endFill=0;fontSize=10;" edge="1" parent="1" source="obj_home" target="obj_explore">
+          <mxGeometry relative="1" width="150" height="20" as="geometry">
+            <mxPoint x="550" y="620" as="sourcePoint" />
+            <mxPoint x="720" y="620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="msg_e3" value="17: getAllRooms()" style="html=1;verticalAlign=bottom;endArrow=open;dashed=0;endFill=0;fontSize=10;" edge="1" parent="1" source="obj_explore" target="obj_database">
+          <mxGeometry relative="1" width="150" height="20" as="geometry">
+            <mxPoint x="720" y="640" as="sourcePoint" />
+            <mxPoint x="1350" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="msg_e4" value="18: SELECT * FROM TABLE_ROOM" style="html=1;verticalAlign=bottom;endArrow=open;dashed=0;endFill=0;fontSize=10;strokeColor=#FF0000;" edge="1" parent="1" source="obj_database" target="obj_database">
+          <mxGeometry relative="1" width="200" height="20" as="geometry">
+            <mxPoint x="1350" y="660" as="sourcePoint" />
+            <mxPoint x="1400" y="660" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="msg_e5" value="19: return room list" style="html=1;verticalAlign=bottom;endArrow=open;dashed=0;endFill=0;fontSize=10;" edge="1" parent="1" source="obj_database" target="obj_explore">
+          <mxGeometry relative="1" width="150" height="20" as="geometry">
+            <mxPoint x="1350" y="680" as="sourcePoint" />
+            <mxPoint x="720" y="680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="msg_e6" value="20: Display rooms in RecyclerView" style="html=1;verticalAlign=bottom;endArrow=open;dashed=0;endFill=0;fontSize=10;strokeColor=#0000FF;" edge="1" parent="1" source="obj_explore" target="obj_explore">
+          <mxGeometry relative="1" width="150" height="20" as="geometry">
+            <mxPoint x="720" y="700" as="sourcePoint" />
+            <mxPoint x="790" y="700" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="msg_e7" value="21: Enter search query &amp; filters" style="html=1;verticalAlign=bottom;endArrow=open;dashed=0;endFill=0;fontSize=10;" edge="1" parent="1" source="actor_user" target="obj_explore">
+          <mxGeometry relative="1" width="150" height="20" as="geometry">
+            <mxPoint x="95" y="730" as="sourcePoint" />
+            <mxPoint x="720" y="730" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="msg_e8" value="22: applyFilters(search, price, type)" style="html=1;verticalAlign=bottom;endArrow=open;dashed=0;endFill=0;fontSize=10;strokeColor=#0000FF;" edge="1" parent="1" source="obj_explore" target="obj_explore">
+          <mxGeometry relative="1" width="150" height="20" as="geometry">
+            <mxPoint x="720" y="750" as="sourcePoint" />
+            <mxPoint x="790" y="750" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="msg_e9" value="23: Update filtered list" style="html=1;verticalAlign=bottom;endArrow=open;dashed=0;endFill=0;fontSize=10;" edge="1" parent="1" source="obj_explore" target="actor_user">
+          <mxGeometry relative="1" width="150" height="20" as="geometry">
+            <mxPoint x="720" y="770" as="sourcePoint" />
+            <mxPoint x="95" y="770" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- SEQUENCE 4: BOOK ROOM -->
+        <mxCell id="label_seq4" value="SEQ 4: BOOK A ROOM" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;backgroundColor=#FFF2CC;" vertex="1" parent="1">
+          <mxGeometry x="50" y="810" width="400" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="msg_b1" value="24: Click Book Now on Room" style="html=1;verticalAlign=bottom;endArrow=open;dashed=0;endFill=0;fontSize=10;" edge="1" parent="1" source="actor_user" target="obj_explore">
+          <mxGeometry relative="1" width="150" height="20" as="geometry">
+            <mxPoint x="95" y="840" as="sourcePoint" />
+            <mxPoint x="720" y="840" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="msg_b2" value="25: startActivity(BookingActivity, room)" style="html=1;verticalAlign=bottom;endArrow=open;dashed=0;endFill=0;fontSize=10;" edge="1" parent="1" source="obj_explore" target="obj_booking">
+          <mxGeometry relative="1" width="150" height="20" as="geometry">
+            <mxPoint x="720" y="860" as="sourcePoint" />
+            <mxPoint x="890" y="860" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="msg_b3" value="26: Display room details &amp; date picker" style="html=1;verticalAlign=bottom;endArrow=open;dashed=0;endFill=0;fontSize=10;" edge="1" parent="1" source="obj_booking" target="actor_user">
+          <mxGeometry relative="1" width="150" height="20" as="geometry">
+            <mxPoint x="890" y="880" as="sourcePoint" />
+            <mxPoint x="95" y="880" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="msg_b4" value="27: Select check-in &amp; check-out dates" style="html=1;verticalAlign=bottom;endArrow=open;dashed=0;endFill=0;fontSize=10;" edge="1" parent="1" source="actor_user" target="obj_booking">
+          <mxGeometry relative="1" width="150" height="20" as="geometry">
+            <mxPoint x="95" y="910" as="sourcePoint" />
+            <mxPoint x="890" y="910" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="msg_b5" value="28: getAlreadyBookedDates()" style="html=1;verticalAlign=bottom;endArrow=open;dashed=0;endFill=0;fontSize=10;" edge="1" parent="1" source="obj_booking" target="obj_database">
+          <mxGeometry relative="1" width="150" height="20" as="geometry">
+            <mxPoint x="890" y="930" as="sourcePoint" />
+            <mxPoint x="1350" y="930" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="msg_b6" value="29: Query booked dates for room" style="html=1;verticalAlign=bottom;endArrow=open;dashed=0;endFill=0;fontSize=10;strokeColor=#FF0000;" edge="1" parent="1" source="obj_database" target="obj_database">
+          <mxGeometry relative="1" width="200" height="20" as="geometry">
+            <mxPoint x="1350" y="950" as="sourcePoint" />
+            <mxPoint x="1400" y="950" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="msg_b7" value="30: return booked dates" style="html=1;verticalAlign=bottom;endArrow=open;dashed=0;endFill=0;fontSize=10;" edge="1" parent="1" source="obj_database" target="obj_booking">
+          <mxGeometry relative="1" width="150" height="20" as="geometry">
+            <mxPoint x="1350" y="970" as="sourcePoint" />
+            <mxPoint x="890" y="970" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="msg_b8" value="31: Click Book Room Button" style="html=1;verticalAlign=bottom;endArrow=open;dashed=0;endFill=0;fontSize=10;" edge="1" parent="1" source="actor_user" target="obj_booking">
+          <mxGeometry relative="1" width="150" height="20" as="geometry">
+            <mxPoint x="95" y="1000" as="sourcePoint" />
+            <mxPoint x="890" y="1000" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="msg_b9" value="32: Get user email from SharedPreferences" style="html=1;verticalAlign=bottom;endArrow=open;dashed=0;endFill=0;fontSize=10;strokeColor=#0000FF;" edge="1" parent="1" source="obj_booking" target="obj_booking">
+          <mxGeometry relative="1" width="150" height="20" as="geometry">
+            <mxPoint x="890" y="1020" as="sourcePoint" />
+            <mxPoint x="960" y="1020" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="msg_b10" value="33: getUserIdByEmail(email)" style="html=1;verticalAlign=bottom;endArrow=open;dashed=0;endFill=0;fontSize=10;" edge="1" parent="1" source="obj_booking" target="obj_database">
+          <mxGeometry relative="1" width="150" height="20" as="geometry">
+            <mxPoint x="890" y="1040" as="sourcePoint" />
+            <mxPoint x="1350" y="1040" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="msg_b11" value="34: return userId" style="html=1;verticalAlign=bottom;endArrow=open;dashed=0;endFill=0;fontSize=10;" edge="1" parent="1" source="obj_database" target="obj_booking">
+          <mxGeometry relative="1" width="150" height="20" as="geometry">
+            <mxPoint x="1350" y="1060" as="sourcePoint" />
+            <mxPoint x="890" y="1060" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="msg_b12" value="35: INSERT booking into TABLE_BOOKING" style="html=1;verticalAlign=bottom;endArrow=open;dashed=0;endFill=0;fontSize=10;" edge="1" parent="1" source="obj_booking" target="obj_database">
+          <mxGeometry relative="1" width="150" height="20" as="geometry">
+            <mxPoint x="890" y="1080" as="sourcePoint" />
+            <mxPoint x="1350" y="1080" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="msg_b13" value="36: Success/Failure" style="html=1;verticalAlign=bottom;endArrow=open;dashed=0;endFill=0;fontSize=10;" edge="1" parent="1" source="obj_database" target="obj_booking">
+          <mxGeometry relative="1" width="150" height="20" as="geometry">
+            <mxPoint x="1350" y="1100" as="sourcePoint" />
+            <mxPoint x="890" y="1100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="msg_b14" value="37: Toast notification" style="html=1;verticalAlign=bottom;endArrow=open;dashed=0;endFill=0;fontSize=10;" edge="1" parent="1" source="obj_booking" target="actor_user">
+          <mxGeometry relative="1" width="150" height="20" as="geometry">
+            <mxPoint x="890" y="1120" as="sourcePoint" />
+            <mxPoint x="95" y="1120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- SEQUENCE 5: BROWSE ACTIVITIES -->
+        <mxCell id="label_seq5" value="SEQ 5: BROWSE &amp; FILTER ACTIVITIES" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;backgroundColor=#FFF2CC;" vertex="1" parent="1">
+          <mxGeometry x="50" y="1160" width="400" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="msg_a1" value="38: Click Activities Tab" style="html=1;verticalAlign=bottom;endArrow=open;dashed=0;endFill=0;fontSize=10;" edge="1" parent="1" source="actor_user" target="obj_home">
+          <mxGeometry relative="1" width="150" height="20" as="geometry">
+            <mxPoint x="95" y="1190" as="sourcePoint" />
+            <mxPoint x="550" y="1190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="msg_a2" value="39: startActivity(ActivitiesActivity)" style="html=1;verticalAlign=bottom;endArrow=open;dashed=0;endFill=0;fontSize=10;" edge="1" parent="1" source="obj_home" target="obj_activities">
+          <mxGeometry relative="1" width="150" height="20" as="geometry">
+            <mxPoint x="550" y="1210" as="sourcePoint" />
+            <mxPoint x="1060" y="1210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="msg_a3" value="40: loadActivities()" style="html=1;verticalAlign=bottom;endArrow=open;dashed=0;endFill=0;fontSize=10;" edge="1" parent="1" source="obj_activities" target="obj_database">
+          <mxGeometry relative="1" width="150" height="20" as="geometry">
+            <mxPoint x="1060" y="1230" as="sourcePoint" />
+            <mxPoint x="1350" y="1230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="msg_a4" value="41: SELECT * FROM TABLE_ACTIVITY" style="html=1;verticalAlign=bottom;endArrow=open;dashed=0;endFill=0;fontSize=10;strokeColor=#FF0000;" edge="1" parent="1" source="obj_database" target="obj_database">
+          <mxGeometry relative="1" width="200" height="20" as="geometry">
+            <mxPoint x="1350" y="1250" as="sourcePoint" />
+            <mxPoint x="1400" y="1250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="msg_a5" value="42: return activities list" style="html=1;verticalAlign=bottom;endArrow=open;dashed=0;endFill=0;fontSize=10;" edge="1" parent="1" source="obj_database" target="obj_activities">
+          <mxGeometry relative="1" width="150" height="20" as="geometry">
+            <mxPoint x="1350" y="1270" as="sourcePoint" />
+            <mxPoint x="1060" y="1270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="msg_a6" value="43: Display activities in RecyclerView" style="html=1;verticalAlign=bottom;endArrow=open;dashed=0;endFill=0;fontSize=10;strokeColor=#0000FF;" edge="1" parent="1" source="obj_activities" target="obj_activities">
+          <mxGeometry relative="1" width="150" height="20" as="geometry">
+            <mxPoint x="1060" y="1290" as="sourcePoint" />
+            <mxPoint x="1130" y="1290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="msg_a7" value="44: Select date &amp; activity category" style="html=1;verticalAlign=bottom;endArrow=open;dashed=0;endFill=0;fontSize=10;" edge="1" parent="1" source="actor_user" target="obj_activities">
+          <mxGeometry relative="1" width="150" height="20" as="geometry">
+            <mxPoint x="95" y="1320" as="sourcePoint" />
+            <mxPoint x="1060" y="1320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="msg_a8" value="45: applyFilters(category)" style="html=1;verticalAlign=bottom;endArrow=open;dashed=0;endFill=0;fontSize=10;strokeColor=#0000FF;" edge="1" parent="1" source="obj_activities" target="obj_activities">
+          <mxGeometry relative="1" width="150" height="20" as="geometry">
+            <mxPoint x="1060" y="1340" as="sourcePoint" />
+            <mxPoint x="1130" y="1340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="msg_a9" value="46: Update filtered activities" style="html=1;verticalAlign=bottom;endArrow=open;dashed=0;endFill=0;fontSize=10;" edge="1" parent="1" source="obj_activities" target="actor_user">
+          <mxGeometry relative="1" width="150" height="20" as="geometry">
+            <mxPoint x="1060" y="1360" as="sourcePoint" />
+            <mxPoint x="95" y="1360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- SEQUENCE 6: BOOK ACTIVITY -->
+        <mxCell id="label_seq6" value="SEQ 6: BOOK AN ACTIVITY" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;backgroundColor=#FFF2CC;" vertex="1" parent="1">
+          <mxGeometry x="50" y="1400" width="400" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="msg_ac1" value="47: Click Book Activity Button" style="html=1;verticalAlign=bottom;endArrow=open;dashed=0;endFill=0;fontSize=10;" edge="1" parent="1" source="actor_user" target="obj_activities">
+          <mxGeometry relative="1" width="150" height="20" as="geometry">
+            <mxPoint x="95" y="1430" as="sourcePoint" />
+            <mxPoint x="1060" y="1430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="msg_ac2" value="48: Show booking confirmation dialog" style="html=1;verticalAlign=bottom;endArrow=open;dashed=0;endFill=0;fontSize=10;" edge="1" parent="1" source="obj_activities" target="actor_user">
+          <mxGeometry relative="1" width="150" height="20" as="geometry">
+            <mxPoint x="1060" y="1450" as="sourcePoint" />
+            <mxPoint x="95" y="1450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="msg_ac3" value="49: Confirm booking" style="html=1;verticalAlign=bottom;endArrow=open;dashed=0;endFill=0;fontSize=10;" edge="1" parent="1" source="actor_user" target="obj_activities">
+          <mxGeometry relative="1" width="150" height="20" as="geometry">
+            <mxPoint x="95" y="1480" as="sourcePoint" />
+            <mxPoint x="1060" y="1480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="msg_ac4" value="50: getUserIdByEmail(email)" style="html=1;verticalAlign=bottom;endArrow=open;dashed=0;endFill=0;fontSize=10;" edge="1" parent="1" source="obj_activities" target="obj_database">
+          <mxGeometry relative="1" width="150" height="20" as="geometry">
+            <mxPoint x="1060" y="1500" as="sourcePoint" />
+            <mxPoint x="1350" y="1500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="msg_ac5" value="51: return userId" style="html=1;verticalAlign=bottom;endArrow=open;dashed=0;endFill=0;fontSize=10;" edge="1" parent="1" source="obj_database" target="obj_activities">
+          <mxGeometry relative="1" width="150" height="20" as="geometry">
+            <mxPoint x="1350" y="1520" as="sourcePoint" />
+            <mxPoint x="1060" y="1520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="msg_ac6" value="52: isAlreadyBooked(userId, activityId, date)" style="html=1;verticalAlign=bottom;endArrow=open;dashed=0;endFill=0;fontSize=10;" edge="1" parent="1" source="obj_activities" target="obj_database">
+          <mxGeometry relative="1" width="150" height="20" as="geometry">
+            <mxPoint x="1060" y="1540" as="sourcePoint" />
+            <mxPoint x="1350" y="1540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="msg_ac7" value="53: Query existing bookings" style="html=1;verticalAlign=bottom;endArrow=open;dashed=0;endFill=0;fontSize=10;strokeColor=#FF0000;" edge="1" parent="1" source="obj_database" target="obj_database">
+          <mxGeometry relative="1" width="150" height="20" as="geometry">
+            <mxPoint x="1350" y="1560" as="sourcePoint" />
+            <mxPoint x="1400" y="1560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="msg_ac8" value="54: return exists (true/false)" style="html=1;verticalAlign=bottom;endArrow=open;dashed=0;endFill=0;fontSize=10;" edge="1" parent="1" source="obj_database" target="obj_activities">
+          <mxGeometry relative="1" width="150" height="20" as="geometry">
+            <mxPoint x="1350" y="1580" as="sourcePoint" />
+            <mxPoint x="1060" y="1580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="msg_ac9" value="55: INSERT booking into TABLE_ACTIVITY_BOOKING" style="html=1;verticalAlign=bottom;endArrow=open;dashed=0;endFill=0;fontSize=10;" edge="1" parent="1" source="obj_activities" target="obj_database">
+          <mxGeometry relative="1" width="150" height="20" as="geometry">
+            <mxPoint x="1060" y="1600" as="sourcePoint" />
+            <mxPoint x="1350" y="1600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="msg_ac10" value="56: Success/Failure" style="html=1;verticalAlign=bottom;endArrow=open;dashed=0;endFill=0;fontSize=10;" edge="1" parent="1" source="obj_database" target="obj_activities">
+          <mxGeometry relative="1" width="150" height="20" as="geometry">
+            <mxPoint x="1350" y="1620" as="sourcePoint" />
+            <mxPoint x="1060" y="1620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="msg_ac11" value="57: Toast notification" style="html=1;verticalAlign=bottom;endArrow=open;dashed=0;endFill=0;fontSize=10;" edge="1" parent="1" source="obj_activities" target="actor_user">
+          <mxGeometry relative="1" width="150" height="20" as="geometry">
+            <mxPoint x="1060" y="1640" as="sourcePoint" />
+            <mxPoint x="95" y="1640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- SEQUENCE 7: VIEW PROFILE -->
+        <mxCell id="label_seq7" value="SEQ 7: VIEW &amp; MANAGE PROFILE" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;backgroundColor=#FFF2CC;" vertex="1" parent="1">
+          <mxGeometry x="50" y="1680" width="400" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="msg_p1" value="58: Click Profile Tab" style="html=1;verticalAlign=bottom;endArrow=open;dashed=0;endFill=0;fontSize=10;" edge="1" parent="1" source="actor_user" target="obj_home">
+          <mxGeometry relative="1" width="150" height="20" as="geometry">
+            <mxPoint x="95" y="1710" as="sourcePoint" />
+            <mxPoint x="550" y="1710" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="msg_p2" value="59: startActivity(ProfileActivity)" style="html=1;verticalAlign=bottom;endArrow=open;dashed=0;endFill=0;fontSize=10;" edge="1" parent="1" source="obj_home" target="obj_profile">
+          <mxGeometry relative="1" width="150" height="20" as="geometry">
+            <mxPoint x="550" y="1730" as="sourcePoint" />
+            <mxPoint x="1230" y="1730" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="msg_p3" value="60: loadUserData() from SharedPreferences" style="html=1;verticalAlign=bottom;endArrow=open;dashed=0;endFill=0;fontSize=10;strokeColor=#0000FF;" edge="1" parent="1" source="obj_profile" target="obj_profile">
+          <mxGeometry relative="1" width="150" height="20" as="geometry">
+            <mxPoint x="1230" y="1750" as="sourcePoint" />
+            <mxPoint x="1300" y="1750" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="msg_p4" value="61: Display profile info" style="html=1;verticalAlign=bottom;endArrow=open;dashed=0;endFill=0;fontSize=10;" edge="1" parent="1" source="obj_profile" target="actor_user">
+          <mxGeometry relative="1" width="150" height="20" as="geometry">
+            <mxPoint x="1230" y="1770" as="sourcePoint" />
+            <mxPoint x="95" y="1770" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="msg_p5" value="62: Click Edit/Preferences/PastStays/BookedActivities" style="html=1;verticalAlign=bottom;endArrow=open;dashed=0;endFill=0;fontSize=10;" edge="1" parent="1" source="actor_user" target="obj_profile">
+          <mxGeometry relative="1" width="200" height="20" as="geometry">
+            <mxPoint x="95" y="1800" as="sourcePoint" />
+            <mxPoint x="1230" y="1800" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="msg_p6" value="63: Navigate to respective activity" style="html=1;verticalAlign=bottom;endArrow=open;dashed=0;endFill=0;fontSize=10;" edge="1" parent="1" source="obj_profile" target="actor_user">
+          <mxGeometry relative="1" width="150" height="20" as="geometry">
+            <mxPoint x="1230" y="1820" as="sourcePoint" />
+            <mxPoint x="95" y="1820" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="msg_p7" value="64: View/Edit respective data" style="html=1;verticalAlign=bottom;endArrow=open;dashed=0;endFill=0;fontSize=10;" edge="1" parent="1" source="actor_user" target="obj_profile">
+          <mxGeometry relative="1" width="150" height="20" as="geometry">
+            <mxPoint x="95" y="1850" as="sourcePoint" />
+            <mxPoint x="1230" y="1850" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="msg_p8" value="65: Click Sign Out" style="html=1;verticalAlign=bottom;endArrow=open;dashed=0;endFill=0;fontSize=10;" edge="1" parent="1" source="actor_user" target="obj_profile">
+          <mxGeometry relative="1" width="150" height="20" as="geometry">
+            <mxPoint x="95" y="1880" as="sourcePoint" />
+            <mxPoint x="1230" y="1880" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="msg_p9" value="66: startActivity(MainActivity, FLAG_ACTIVITY_NEW_TASK)" style="html=1;verticalAlign=bottom;endArrow=open;dashed=0;endFill=0;fontSize=10;" edge="1" parent="1" source="obj_profile" target="obj_main">
+          <mxGeometry relative="1" width="150" height="20" as="geometry">
+            <mxPoint x="1230" y="1900" as="sourcePoint" />
+            <mxPoint x="210" y="1900" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="msg_p10" value="67: Return to Login Screen" style="html=1;verticalAlign=bottom;endArrow=open;dashed=0;endFill=0;fontSize=10;" edge="1" parent="1" source="obj_main" target="actor_user">
+          <mxGeometry relative="1" width="150" height="20" as="geometry">
+            <mxPoint x="210" y="1920" as="sourcePoint" />
+            <mxPoint x="95" y="1920" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Legend -->
+        <mxCell id="legend_title" value="LEGEND" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="1960" width="150" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="legend_db" value="━━ Database Operation (SQL Query)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#FF0000;" vertex="1" parent="1">
+          <mxGeometry x="50" y="1980" width="400" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="legend_local" value="━━ Local Operation/Internal Processing" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#0000FF;" vertex="1" parent="1">
+          <mxGeometry x="50" y="2000" width="400" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="legend_interaction" value="━▶ User/System Interaction or Intent" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="50" y="2020" width="400" height="20" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
+
